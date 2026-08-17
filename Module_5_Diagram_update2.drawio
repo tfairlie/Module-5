@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="ccJY4e5mhGCttE9NsNy9">
+    <mxGraphModel dx="1022" dy="564" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#FFFFFF,#121212)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-14" edge="1" parent="1" source="TJX3zdoVnTh3LzXvjP9k-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="TJX3zdoVnTh3LzXvjP9k-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-1" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Data Clean&lt;div&gt;-Remove Duplicates,&lt;/div&gt;&lt;div&gt;Standardise Fields&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="400" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-11" edge="1" parent="1" source="TJX3zdoVnTh3LzXvjP9k-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="TJX3zdoVnTh3LzXvjP9k-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-2" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="Storage- Sharepoint" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-12" edge="1" parent="1" source="TJX3zdoVnTh3LzXvjP9k-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="TJX3zdoVnTh3LzXvjP9k-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-3" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Data Validation&lt;div&gt;(Missing Values, duplicates, formats)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="160" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-13" edge="1" parent="1" source="TJX3zdoVnTh3LzXvjP9k-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="TJX3zdoVnTh3LzXvjP9k-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-5" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Log Errors" vertex="1">
+          <mxGeometry height="60" width="90" x="290" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-7" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Output Clean Dataset - CSV" vertex="1">
+          <mxGeometry height="60" width="120" x="580" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-8" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Power Bi Dashboard" vertex="1">
+          <mxGeometry height="60" width="120" x="716" y="359" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-17" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=90;" value="" vertex="1">
+          <mxGeometry height="430" width="40" x="415" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Data Processing&lt;/b&gt;&lt;div&gt;&lt;b&gt;Python ETL Script&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="355" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-26" edge="1" parent="1" source="TJX3zdoVnTh3LzXvjP9k-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="TJX3zdoVnTh3LzXvjP9k-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="CSV 1" vertex="1">
+          <mxGeometry height="30" width="77" x="12" y="374" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-27" edge="1" parent="1" source="TJX3zdoVnTh3LzXvjP9k-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="TJX3zdoVnTh3LzXvjP9k-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="CSV 2" vertex="1">
+          <mxGeometry height="30" width="77" x="94" y="374" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Data Ingestion&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="5" y="407" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-30" edge="1" parent="1" source="TJX3zdoVnTh3LzXvjP9k-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="TJX3zdoVnTh3LzXvjP9k-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-29" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="DB" vertex="1">
+          <mxGeometry height="80" width="60" x="616" y="349" as="geometry" />
+        </mxCell>
+        <mxCell id="TJX3zdoVnTh3LzXvjP9k-31" edge="1" parent="1" source="TJX3zdoVnTh3LzXvjP9k-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.393;entryY=0.053;entryDx=0;entryDy=0;entryPerimeter=0;" target="TJX3zdoVnTh3LzXvjP9k-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
