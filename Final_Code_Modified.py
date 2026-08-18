@@ -29,6 +29,16 @@ def duplicateCheck(df):
         print(f"Duplicates removed. New row count: {len(df)}")
     return df
 
+#Counts the number of na then drops them if there are 1 or more.
+def naCheck(df):
+    na_count = df.isna().sum().sum()
+    print(f"Missing values found: {na_count}")
+    if na_count > 0:
+        df = df.dropna()
+        print(f"Rows containing NAs removed. New row count: {len(df)}")
+    return df
+
+
 def datediff(ColA, ColB, df):
     df['Days Borrowed'] = (df[ColA]-df[ColB]).dt.days
     return df
@@ -64,8 +74,8 @@ if __name__ == "__main__":
     df_system_book["Books"] = df_system_book["Books"].astype("string")
     
     ##Remove all nulls
-    df_system_book = df_system_book.dropna(how='all')
-    
+    df_system_book = naCheck(df_system_book)
+
     ##Change the word NaT to nan
     df_system_book["Book checkout"] = df_system_book["Book checkout"].replace(pd.NaT, np.nan)
 
@@ -109,8 +119,7 @@ if __name__ == "__main__":
 
     #DATA SET 2- CLEANING
     ##Remove all nulls
-    df_system_customers = df_system_customers.dropna(how='all')
-
+    df_system_customers = naCheck(df_system_customers)
     ##check Duplicates
     df_system_customers = duplicateCheck(df_system_customers)
 
