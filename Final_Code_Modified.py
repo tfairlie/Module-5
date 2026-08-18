@@ -73,6 +73,9 @@ if __name__ == "__main__":
 
     df_system_book["Books"] = df_system_book["Books"].astype("string")
     
+    ##Caputer nulls before removing 
+    error_log = df_system_book[df_system_book.isnull().any(axis=1)].copy()
+    
     ##Remove all nulls
     df_system_book = naCheck(df_system_book)
 
@@ -102,12 +105,8 @@ if __name__ == "__main__":
     df_system_book.isnull().sum()
 
     ##Create Error log -Could be developed further to add dates it was found and reason why its an error.
-    error_log = df_system_book[df_system_book.isnull().any(axis=1)].copy()
-    error_log.to_csv("error_log.csv", index=False)
-
-    error_log.to_csv(
-    "03_Library Systembook_ERROR_LOG.csv",
-    index=False)
+  #  error_log = df_system_book[df_system_book.isnull().any(axis=1)].copy()
+    error_log.to_csv("03_Library Systembook_ERROR_LOG.csv", index=False)
     print("03_Library Systembook_ERROR_LOG File saved")
     
     #DATA SET 1- CLEAN OUTPUT
