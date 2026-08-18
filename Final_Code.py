@@ -4,8 +4,8 @@ import numpy as np
 
 #Define Functions
 
-def datediff(start_date, end_date):
-    return(start_date-end_date).dt.days
+##def datediff(ColA, ColB, df):
+  ##  df['Days Borrowed']- (df[ColA]-df[ColB]).dt.days
 
 #Main Code
 
@@ -47,8 +47,13 @@ if __name__ == "__main__":
     df_system_book = df_system_book[df_system_book["Book checkout"].notna() ]
     
     #DATA SET 1- ENIRCHING
+
+    df_system_book['Days Borrowed'] = (
+    df_system_book['Book Returned']
+    - df_system_book['Book checkout']
+    ).dt.days
     ##Calculate number of days borrowed
-    df_system_book["Days Borrowed"] = datediff("Book checkout", "Book Returned").dt.days
+    ##datediff( df = df_system_book, ColA ="Book Returned", ColB= "Book checkout")
 
     ##Estalish if the book was returned on time or late
     df_system_book["Status"] = np.where(
